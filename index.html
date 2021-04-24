@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Zer0</title>
+  <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    20'den büyük bir sayı gir. Oyuncular sırayla "1" veya "2" eksiltecek. "0" demek zorunda kalan kaybedecek. Sen başlıyorsun.
+  </div>
+  
+  <div class="row">
+    <div class="col-4 menu">
+      <p>
+        Project Game Zer0
+      </p>
+    </div>
+  
+    <div class="col-6">
+      
+      <button id="start" onclick="startGame()" >Başlat</button>
+      
+      <p id="myNum"></p>
+      
+
+      <button id="one" onclick="minusOne()">1 eksilt</button>
+      <button id="two" onclick="minusTwo()">2 eksilt</button>
+
+      
+      <p id="gameLog" style="font-size: 120px; color:rgb(72, 97, 105) ;"></p>
+
+      
+      
+    </div>
+  </div>
+   
+ 
+</body>
+
+</html>
