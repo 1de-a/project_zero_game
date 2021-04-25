@@ -63,7 +63,7 @@ color: #314249;
   background-color: #47C0B3;
   border: none;
   color: #F3EEEF;
-  padding: 10px 20px;
+  padding: 8px 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -88,7 +88,7 @@ color: #314249;
 
 #one {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;
   font-size: 20px;
   cursor: pointer;
   text-align: center;
@@ -98,21 +98,21 @@ color: #314249;
   background-color: #47C0B3;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 2px #999;
+  
 }
 
 #one:hover {background-color: #7BA398}
 
 #one:active {
   background-color: #7BA398;
-  box-shadow: 0 5px #666;
+  
   transform: translateY(4px);
 }
 
 
 #two {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;
   font-size: 20px;
   cursor: pointer;
   text-align: center;
@@ -122,14 +122,14 @@ color: #314249;
   background-color: #47C0B3;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 2px #999;
+  
 }
 
 #two:hover {background-color: #7BA398}
 
 #two:active {
   background-color: #7BA398;
-  box-shadow: 0 5px #666;
+  
   transform: translateY(4px);
 }
 
