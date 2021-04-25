@@ -3,19 +3,25 @@
 let n;
 let answer;
 let myNum;
+let logger;
+let para = document.createElement('p');
+
+
+const output = document.querySelector(".logger");
+logger.innerHTML = "";
 
 
 function startGame()  {
 answer = prompt("Kaçtan başlayalım?", "");
 
 if (answer<20) {
-    alert("20'den büyük demiştik ama.")
+    alert("20'den büyük bir sayıyla başlamalısın.")
     startGame()
 }
 
 else {
     myNum = answer;
-    document.getElementById("myNum").innerHTML = ("Sen en son"+" "+myNum+" "+"dedin.");
+    para.textContent = myNum;
 
     if ( answer%3==0 )   {
 
@@ -36,7 +42,8 @@ else {
 
 
 document.getElementById("gameLog").innerHTML = (n);
-
+para.textContent = n;
+output.appendChild(para);
 }}
 
 function minusOne()   {
@@ -44,7 +51,7 @@ function minusOne()   {
     
 
     myNum = n-1;
-    document.getElementById("myNum").innerHTML = ("Sen en son"+" "+myNum+" "+"dedin.");
+    para.textContent = myNum;
 
     if ( (n-1)%3==0 )   {
 
@@ -64,31 +71,35 @@ function minusOne()   {
     }
 
     document.getElementById("gameLog").innerHTML = (n);
+    para.textContent = n;
+    
 
-   if (n==1) {
+   if (n===1) {
        
     alert("Sıfır sana kaldı. Kaybettin.")
 
    }
 
-   else if (n==2) {
+   else if (n===2) {
 
     alert("Sıfır bana kaldı. Kazandın.")
    }
 
-   else if (n==3) {
+   else if (n===3) {
     
     alert("Sıfır bana kaldı. Kazandın.")
-    location.reload();
+    
    }
-  
+   output.appendChild(para);
+   location.reload();
 }
 
 function minusTwo()  {
 
 
     myNum = n-2;
-    document.getElementById("myNum").innerHTML = ("Sen en son"+" "+myNum+" "+"dedin.");
+    para.textContent = myNum;
+    
 
     if ( (n-2)%3==0 )   {
 
@@ -106,27 +117,33 @@ function minusTwo()  {
 
         alert("bir takım hatalar yapıldı.")
     }
+    para.textContent = n;
 
     document.getElementById("gameLog").innerHTML = (n);
 
-    if (n==1) {
+    if (n===1) {
        
         alert("Sıfır sana kaldı. Kaybettin.")
-        location.reload();
+        
     
        }
     
-       else if (n==2) {
+       else if (n===2) {
     
         alert("Sıfır bana kaldı. Kazandın.")
-        location.reload();
+        
        }
 
-       else if (n==3) {
+       else if (n===3) {
     
         alert("Sıfır bana kaldı. Kazandın.")
-        location.reload();
+        
        }
+
+
+       output.appendChild(para);
+       location.reload();
+       
 
 }
 

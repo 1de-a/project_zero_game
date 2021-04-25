@@ -1,72 +1,150 @@
 
-* {
-  box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+.container {
+  height: 80px;
+  position: relative;
+  border: 3px solid transparent;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-.header {
-  background-color: #596366;
-  color: white;
-  padding: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-
-
-.menu  {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: lightblue;
-  color: black;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 
 html {
   background: url(0.jpg) no-repeat center fixed;
   background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+}
 
-  [class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+footer {
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #314249;
+  text-align: center;
+}
+
+.centerDiv  {
+
+  text-align: center;
+}
+
+header   {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 40px;
+  color:  #314249;
+}
+
+.intro  {
+
+text-align: center;
+color: #314249;
+
+}
+
+
+#start  {
+
+  background-color: #47C0B3;
+  border: none;
+  color: #F3EEEF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  font-family: 'Ubuntu';
+}
+
+
+#start:hover {
+  background-color: #314249; 
+  color: #F3EEEF;
+  cursor: pointer;
+}
+
+#start:active {
+  background-color: #314249;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#one {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #F3EEEF;
+  background-color: #47C0B3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+#one:hover {background-color: #7BA398}
+
+#one:active {
+  background-color: #7BA398;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#two {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #F3EEEF;
+  background-color: #47C0B3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+#two:hover {background-color: #7BA398}
+
+#two:active {
+  background-color: #7BA398;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#myNum {
+
+
+  color: #314249;
+  font-size: 25px;
+}
+
+
+li {
+
+  list-style-type: none;
+  text-align: center;
+  color: #314249;
+  font-size: 25px;
 }
